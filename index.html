@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="shortcut icon" href="./img/favicon_rocket.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/CSS/style.css" />
+
+		<title>Portfolio - Dawid Gieras</title>
+		<script src="https://kit.fontawesome.com/94c4bb14a7.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<nav class="navbar nav_box navbar-expand-lg navbar-dark p-md-3 fw-bold">
+			<div class="container nav_container">
+				<div class="navbar-brand nav_left">
+					<a class="navbar-brand text-dark" href="#"
+						><i class="nav_icon_name fa fa-rocket"></i>Dawid Gieras</a
+					>
+				</div>
+				<button
+					class="navbar-toggler nav_icon"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="nav_list mx-auto"></div>
+					<ul class="navbar-nav nav_list">
+						<li class="nav-item">
+							<a class="nav-link text-black" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<button id="myBtn" title="Go to top">Top</button>
+			<section id="home" class="home_section d-flex flex-column">
+				<div class="container">
+					<div class="home_section_box row">
+						<div class="welcome_box col-sm-12 col-md-12 col-lg-4">
+							<div class="empty_box">
+								<h1>Hello,</h1>
+								<p class="name">it's Dawid!</p>
+							</div>
+							<div class="home_box_icons d-flex">
+								<i
+									class="fa fa-at mx-3 mail_icon"
+									href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+									class="mail_anchor"
+									target="_blank"
+								></i>
+								<i
+									class="fa fa-github mx-3 mid"
+									target="_blank"
+									href="https://github.com/dawidgieras98"
+								></i>
+								<i
+									class="fa fa-linkedin mx-3"
+									href="https://www.linkedin.com/in/dawid-gieras-b0a0621a6/"
+									target="_blank"
+								></i>
+							</div>
+						</div>
+						<div
+							class="home_image_box col col-sm-12 col-md-12 col-lg-7 d-flex flex-column align-items-end justify-content-center"
+						>
+							<img src="./img/ufo.png" class="ufo" alt="floating UFO" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="about_section">
+				<div class="container first_about">
+					<div class="row py-5">
+						<div
+							class="col-sm-12 col-md-12 col-lg-6 about_left d-flex flex-column justify-content-between align-items-center"
+						>
+							<div class="goal_info">
+								<h2>Who am I?</h2>
+								<p>
+									My name is Dawid and I am 23 years old. I recently graduated from Advanced
+									Biobased and Bioinspired Materials at the Lodz University of Technology at the
+									Faculty of Chemistry and IFE. In addition to work and study, I am an enthusiast of
+									the latest technological innovations related to electronics and frontend
+									engineering.
+								</p>
+							</div>
+							<div class="cv_circle text-center pop">
+								<a href="./Dawid Gieras Resume.pdf" target="_blank" width="100%" height="100%"
+									><img src="/img/CV.svg" width="50%" height="100%" alt="CV page"
+								/></a>
+							</div>
+						</div>
+						<div
+							class="col-sm-12 col-md-12 col-lg-6 about_right d-flex align-items-center justify-content-between flex-column"
+						>
+							<img
+								src="./img/telescope.svg"
+								width="250px"
+								height="250px"
+								class="telescope"
+								alt="Yellow telescope"
+							/>
+							<div class="about_info">
+								<h2>What is my goal?</h2>
+								<p>
+									My current goal is to change the job of an analyst to my dream job of becoming a
+									Javascript frontend developer. My goal is also to develop in order to be able to
+									help not only myself but also others, and in the future, I would like to create
+									projects that will be available to everyone, and above all to those who do not
+									find it easy to consume Internet content on daily basis.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="experience_section d-flex justify-content-center align-items-center">
+				<div class="experience_container row container">
+					<div
+						class="experience_left col-sm-12 col-md-12 col-lg-6 d-flex flex-column align-items-center justify-content-center"
+					>
+						<div class="experience_left_info">
+							<h2>What technology am I interested in?</h2>
+							<p>
+								So far, I have become familiar with technologies such as HTML, CSS, Javascript,
+								Bootstrap and SASS. My next step is React because it is what I would like to build
+								my next projects on.
+							</p>
+						</div>
+						<!-- <img src="/img/meteor.svg" width="300px" height="300px" class="meteor" alt="" /> -->
+					</div>
+
+					<div
+						class="experience_right d-flex align-items-center justify-content-center col-sm-12 col-md-12 col-lg-6"
+					>
+						<div class="experience_box">
+							<div class="stack_container d-flex">
+								<div class="row stack_list d-flex align-items-center flex-column">
+									<div class="floatingAni d-flex stack_item justify-content-evenly my-5 col-sm-12">
+										<div>
+											<img src="./img/stack/html.svg" alt="HTML5 icon" />
+										</div>
+										<div>
+											<img src="./img/stack/css.svg" alt="CSS3 icon" />
+										</div>
+										<div>
+											<img src="./img/stack/sass.svg" alt="SASS icon" />
+										</div>
+									</div>
+									<div class="floatingAniD d-flex stack_item my-5 justify-content-evenly col-sm-12">
+										<div>
+											<img src="./img/stack/js.svg" alt="Javascript icon" />
+										</div>
+										<div>
+											<img src="./img/stack/react.svg" alt="react icon" />
+										</div>
+									</div>
+									<div class="floatingAni d-flex stack_item justify-content-evenly my-5 col-sm-12">
+										<div>
+											<img src="./img/stack/bootstrap.svg" alt="bootstrap icon" />
+										</div>
+										<div>
+											<img src="./img/stack/linux.svg" alt="linux icon" />
+										</div>
+										<div>
+											<img src="./img/stack/github.svg" alt="github icon" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="projects_section py-5">
+				<div
+					class="projects_container d-flex row container justify-content-center align-items-center"
+				>
+					<h2 class="text-center pb-5">What have I been able to do so far?</h2>
+					<p>
+						Below are my applications that I have been able to create over the last few months. They
+						are all created with the use of HTML, CSS and Javascript. Among them there are such
+						applications as "finance manager", Sticky Notes and a virtual currency exchange app.
+					</p>
+				</div>
+				<div class="gallery_container container">
+					<div class="gallery row">
+						<ul class="project_gallery gallery">
+							<li class="project_gallery_thumbnail thumbnail">
+								<img tabindex="0" id="0" src="./img/projects/8ball.png" alt="" />
+							</li>
+							<li class="project_gallery_thumbnail thumbnail">
+								<img tabindex="0" id="1" src="./img/projects/billsplitter.png" alt="" />
+							</li>
+							<li class="project_gallery_thumbnail thumbnail">
+								<img tabindex="0" id="2" src="./img/projects/wallet.png" alt="" />
+							</li>
+							<li class="project_gallery_thumbnail thumbnail">
+								<img tabindex="0" id="3" src="./img/projects/todo.png" alt="" />
+							</li>
+							<li class="project_gallery_thumbnail thumbnail">
+								<img tabindex="0" id="4" src="./img/projects/counter.png" alt="" />
+							</li>
+							<li class="project_gallery_thumbnail thumbnail">
+								<img tabindex="0" id="5" src="./img/projects/stoper.png" alt="" />
+							</li>
+							<li class="project_gallery_thumbnail thumbnail">
+								<img tabindex="0" id="6" src="./img/projects/registry.png" alt="" />
+							</li>
+							<li class="project_gallery_thumbnail thumbnail">
+								<img tabindex="0" id="7" src="./img/projects/notes.png" alt="" />
+							</li>
+							<li class="project_gallery_thumbnail thumbnail">
+								<img tabindex="0" id="8" src="./img/projects/exchange.png" alt="" />
+							</li>
+						</ul>
+						<div class="project_popup hidden">
+							<button aria-label="Close popup" class="project_popup_close">X</button>
+							<img src="" alt="" class="project_popup_img" />
+							<div class="info_box">
+								<h3></h3>
+								<p></p>
+							</div>
+							<div class="buttons_box"></div>
+							<button
+								aria-label="Previous slide"
+								class="project_popup_arrow project_popup_arrow--left"
+							>
+								<i class="fa fa-angle-left"></i>
+							</button>
+							<button
+								aria-label="Next slide"
+								class="project_popup_arrow project_popup_arrow--right"
+							>
+								<i class="fa fa-angle-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="contact_section">
+				<h2>Contact</h2>
+				<div class="contact_container container">
+					<div class="contact_bottom">
+						<div class="contact_box d-flex flex-column">
+							<div class="contact_bottom_item">
+								<a href="https://github.com/dawidgieras98" target="_blank"
+									><i
+										class="fa fa-github git"
+										href="https://github.com/dawidgieras98"
+										target="_blank"
+									></i
+									>dawidgieras98</a
+								>
+							</div>
+							<div class="contact_bottom_item">
+								<a href="https://www.linkedin.com/in/dawid-gieras-b0a0621a6/" target="_blank"
+									><i
+										class="fa fa-linkedin linkedin"
+										href="https://www.linkedin.com/in/dawid-gieras-b0a0621a6/"
+										target="_blank"
+									></i
+									>Dawid Gieras</a
+								>
+							</div>
+							<div class="contact_bottom_item">
+								<a
+									href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+									class="mail_anchor"
+									target="_blank"
+									><i
+										class="fa fa-at mail"
+										href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+										target="_blank"
+									></i
+									>dawid.gieras98@gmail.com</a
+								>
+							</div>
+							<div class="contact_bottom_item phone">
+								<a class="phone_anchor"><i class="fa fa-phone"></i>603-609-265</a>
+							</div>
+						</div>
+
+						<div class="contact_img_box">
+							<img src="./img/moon.svg" class="flag_moon" alt="Flag on the moon " />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div
+				class="container-fluid footer_box d-flex flex-column align-items-center justify-content-center"
+			>
+				<i class="fa fa-rocket"></i>
+				<p class="display-5 pt-4 fw-bold">Dawid Gieras</p>
+				<p class="display-5 pb-4">Future Frontend Developer</p>
+				<p class="fw-bold pt-5">© Dawid Gieras 2022</p>
+				<a href="https://www.flaticon.com/free-icons/rocket" title="rocket icons"
+					>Icons are created by - Rocket icons Flaticon</a
+				>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script src="scroll.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
