@@ -42,57 +42,62 @@ const closePopup = () => {
 };
 
 const checkId = (targetsId) => {
-	console.log(targetsId);
 	switch (+targetsId) {
 		case 0:
+			INFO_BOX.innerHTML =
+				"<h2>Dev Creator</h2><p>An application that allows you to build your own custom developer of choice! Just select the characteristics of your desire, check your basket and pay.</p>";
+			BUTTONS_BOX.innerHTML =
+				'<div class="project_buttons d-flex justify-content-between"><a target="_blank" href="https://github.com/dawidgieras98/Dev-creator"><button class="btn_git">Source code</button></a><a target="_blank" href="https://dawidgieras98.github.io/Dev-creator/"><button class="btn_code">Live code</button></a></div>';
+			break;
+		case 1:
 			INFO_BOX.innerHTML =
 				"<h2>Magic 8Ball</h2><p>An application that allows you to ask any question of the magic ball number 8.</p>";
 			BUTTONS_BOX.innerHTML =
 				'<div class="project_buttons d-flex justify-content-between"><a target="_blank" href="https://github.com/dawidgieras98/8-Ball"><button class="btn_git">Source code</button></a><a target="_blank" href="https://dawidgieras98.github.io/8-Ball/"><button class="btn_code">Live code</button></a></div>';
 			break;
-		case 1:
+		case 2:
 			INFO_BOX.innerHTML =
 				"<h2>Billsplitter</h2><p>An application that allows you to divide any bill into any number of people and charge a tip for the service.</p>";
 			BUTTONS_BOX.innerHTML =
 				'<div class="project_buttons d-flex justify-content-between"><a target="_blank" href="https://github.com/dawidgieras98/Billsplitter-"><button class="btn_git">Source code</button></a><a target="_blank" href="https://dawidgieras98.github.io/Billsplitter-/"><button class="btn_code">Live code</button></a></div>';
 			break;
-		case 2:
+		case 3:
 			INFO_BOX.innerHTML =
 				"<h2>Wallet</h2><p>The Wallet app allows you to manage your expenses based on the distinction between expenses and income.</p>";
 			BUTTONS_BOX.innerHTML =
 				'<div class="project_buttons d-flex justify-content-between"><a target="_blank" href="https://github.com/dawidgieras98/Wallet-App"><button class="btn_git">Source code</button></a><a target="_blank" href="https://dawidgieras98.github.io/Wallet-App/"><button class="btn_code">Live code</button></a></div>';
 			break;
-		case 3:
+		case 4:
 			INFO_BOX.innerHTML =
 				"<h2>To do list</h2><p>The To Do app allows you to manage your daily chores. It was created on the basis of HTML CSS and javascript.</p>";
 			BUTTONS_BOX.innerHTML =
 				'<div class="project_buttons d-flex justify-content-between"><a target="_blank" href="https://github.com/dawidgieras98/Todo-List"><button class="btn_git">Source code</button></a><a target="_blank" href="https://dawidgieras98.github.io/Todo-List/"><button class="btn_code">Live code</button></a></div>';
 			break;
-		case 4:
+		case 5:
 			INFO_BOX.innerHTML =
 				"<h2>Time counter</h2><p>Time counter an application that allows you to set a countdown to the date and the name of the event, and allows you to set an image that reflects the event.</p>";
 			BUTTONS_BOX.innerHTML =
 				'<div class="project_buttons d-flex justify-content-between"><a target="_blank" href="https://github.com/dawidgieras98/Time-Counter"><button class="btn_git">Source code</button></a><a target="_blank" href="https://dawidgieras98.github.io/Time-Counter/"><button class="btn_code">Live code</button></a></div>';
 			break;
-		case 5:
+		case 6:
 			INFO_BOX.innerHTML =
 				"<h2>Stopwatch</h2><p>The application, a stopwatch, is a copy of the most ordinary stopwatch, which is located, e.g. on your smartphone</p>";
 			BUTTONS_BOX.innerHTML =
 				'<div class="project_buttons d-flex justify-content-between"><a target="_blank" href="https://github.com/dawidgieras98/Stopwatch"><button class="btn_git">Source code</button></a><a target="_blank" href="https://dawidgieras98.github.io/Stopwatch/"><button class="btn_code">Live code</button></a></div>';
 			break;
-		case 6:
+		case 7:
 			INFO_BOX.innerHTML =
 				"<h2>Sign Up form</h2><p>Registration form that checks the accuracy of completing the form using a validator.</p>";
 			BUTTONS_BOX.innerHTML =
 				'<div class="project_buttons d-flex justify-content-between"><a target="_blank" href="https://github.com/dawidgieras98/Register-form"><button class="btn_git">Source code</button></a><a target="_blank" href="https://dawidgieras98.github.io/Register-form/"><button class="btn_code">Live code</button></a></div>';
 			break;
-		case 7:
+		case 8:
 			INFO_BOX.innerHTML =
 				"<h2>Sticky notes</h2><p>Sticky Notes application, the operation of which is based on the Sticky Notes application, which is found on the Windows operating system. The application allows us to distinguish notes into three categories 'work', 'shopping' and 'study'.</p>";
 			BUTTONS_BOX.innerHTML =
 				'<div class="project_buttons d-flex justify-content-between"><a target="_blank" href="https://github.com/dawidgieras98/MyNotes"><button class="btn_git">Source code</button></a><a target="_blank" href="https://dawidgieras98.github.io/MyNotes/"><button class="btn_code">Live code</button></a></div>';
 			break;
-		case 8:
+		case 9:
 			INFO_BOX.innerHTML =
 				"<h2>Exchange app</h2><p>The Exchange application is a virtual exchange office that allows us to convert currency by using the API from exchangeratesapi.io.<br><br><strong>Note:</strong> The code that is preloaded on Github does not have an API key, therefore the application does not download any information.</p>";
 			BUTTONS_BOX.innerHTML =

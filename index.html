@@ -27,7 +27,7 @@
 		<nav class="navbar nav_box navbar-expand-lg navbar-dark p-md-3 fw-bold">
 			<div class="container nav_container">
 				<div class="navbar-brand nav_left">
-					<a class="navbar-brand text-dark" href="#"
+					<a tabindex="-1" class="navbar-brand logo text-dark"
 						><i class="nav_icon_name fa fa-rocket"></i>Dawid Gieras</a
 					>
 				</div>
@@ -45,7 +45,7 @@
 
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<div class="nav_list mx-auto"></div>
-					<ul class="navbar-nav nav_list">
+					<ul class="navbar-nav d-flex justify-content-center align-items-center nav_list">
 						<li class="nav-item">
 							<a class="nav-link text-black" href="#home">Home</a>
 						</li>
@@ -64,7 +64,7 @@
 		</nav>
 		<main>
 			<button id="myBtn" title="Go to top">Top</button>
-			<section id="home" class="home_section d-flex flex-column">
+			<section id="home" class="home_section">
 				<div class="container">
 					<div class="home_section_box row">
 						<div class="welcome_box col-sm-12 col-md-12 col-lg-4">
@@ -72,23 +72,21 @@
 								<h1>Hello,</h1>
 								<p class="name">it's Dawid!</p>
 							</div>
-							<div class="home_box_icons d-flex">
-								<i
-									class="fa fa-at mx-3 mail_icon"
+
+							<div class="home_box_icons">
+								<a
 									href="https://mail.google.com/mail/u/0/#inbox?compose=new"
 									class="mail_anchor"
 									target="_blank"
-								></i>
-								<i
-									class="fa fa-github mx-3 mid"
-									target="_blank"
-									href="https://github.com/dawidgieras98"
-								></i>
-								<i
-									class="fa fa-linkedin mx-3"
-									href="https://www.linkedin.com/in/dawid-gieras-b0a0621a6/"
-									target="_blank"
-								></i>
+								>
+									<i class="fa fa-at mail_icon"></i
+								></a>
+								<a target="_blank" href="https://github.com/dawidgieras98"
+									><i class="fa fa-github mid"></i>
+								</a>
+								<a href="https://www.linkedin.com/in/dawid-gieras-b0a0621a6/" target="_blank"
+									><i class="fa fa-linkedin"></i
+								></a>
 							</div>
 						</div>
 						<div
@@ -159,7 +157,6 @@
 								my next projects on.
 							</p>
 						</div>
-						<!-- <img src="/img/meteor.svg" width="300px" height="300px" class="meteor" alt="" /> -->
 					</div>
 
 					<div
@@ -220,31 +217,34 @@
 					<div class="gallery row">
 						<ul class="project_gallery gallery">
 							<li class="project_gallery_thumbnail thumbnail">
-								<img tabindex="0" id="0" src="./img/projects/8ball.png" alt="" />
+								<img tabindex="0" id="0" src="./img/projects/dev.png" alt="" />
 							</li>
 							<li class="project_gallery_thumbnail thumbnail">
-								<img tabindex="0" id="1" src="./img/projects/billsplitter.png" alt="" />
+								<img tabindex="0" id="1" src="./img/projects/8ball.png" alt="" />
 							</li>
 							<li class="project_gallery_thumbnail thumbnail">
-								<img tabindex="0" id="2" src="./img/projects/wallet.png" alt="" />
+								<img tabindex="0" id="2" src="./img/projects/billsplitter.png" alt="" />
 							</li>
 							<li class="project_gallery_thumbnail thumbnail">
-								<img tabindex="0" id="3" src="./img/projects/todo.png" alt="" />
+								<img tabindex="0" id="3" src="./img/projects/wallet.png" alt="" />
 							</li>
 							<li class="project_gallery_thumbnail thumbnail">
-								<img tabindex="0" id="4" src="./img/projects/counter.png" alt="" />
+								<img tabindex="0" id="4" src="./img/projects/todo.png" alt="" />
 							</li>
 							<li class="project_gallery_thumbnail thumbnail">
-								<img tabindex="0" id="5" src="./img/projects/stoper.png" alt="" />
+								<img tabindex="0" id="5" src="./img/projects/counter.png" alt="" />
 							</li>
 							<li class="project_gallery_thumbnail thumbnail">
-								<img tabindex="0" id="6" src="./img/projects/registry.png" alt="" />
+								<img tabindex="0" id="6" src="./img/projects/stoper.png" alt="" />
 							</li>
 							<li class="project_gallery_thumbnail thumbnail">
-								<img tabindex="0" id="7" src="./img/projects/notes.png" alt="" />
+								<img tabindex="0" id="7" src="./img/projects/registry.png" alt="" />
 							</li>
 							<li class="project_gallery_thumbnail thumbnail">
-								<img tabindex="0" id="8" src="./img/projects/exchange.png" alt="" />
+								<img tabindex="0" id="8" src="./img/projects/notes.png" alt="" />
+							</li>
+							<li class="project_gallery_thumbnail thumbnail">
+								<img tabindex="0" id="9" src="./img/projects/exchange.png" alt="" />
 							</li>
 						</ul>
 						<div class="project_popup hidden">
@@ -276,40 +276,43 @@
 				<h2>Contact</h2>
 				<div class="contact_container container">
 					<div class="contact_bottom">
-						<div class="contact_box d-flex flex-column">
-							<div class="contact_bottom_item">
-								<a href="https://github.com/dawidgieras98" target="_blank"
-									><i
-										class="fa fa-github git"
-										href="https://github.com/dawidgieras98"
-										target="_blank"
-									></i
-									>dawidgieras98</a
-								>
-							</div>
-							<div class="contact_bottom_item">
-								<a href="https://www.linkedin.com/in/dawid-gieras-b0a0621a6/" target="_blank"
-									><i
-										class="fa fa-linkedin linkedin"
-										href="https://www.linkedin.com/in/dawid-gieras-b0a0621a6/"
-										target="_blank"
-									></i
-									>Dawid Gieras</a
-								>
-							</div>
-							<div class="contact_bottom_item">
-								<a
-									href="https://mail.google.com/mail/u/0/#inbox?compose=new"
-									class="mail_anchor"
-									target="_blank"
-									><i
-										class="fa fa-at mail"
+						<div class="contact_box d-flex flex-column align-items-center justify-content-center">
+							<div class="rotation_box">
+								<div class="contact_bottom_item">
+									<a href="https://github.com/dawidgieras98" target="_blank"
+										><i
+											class="fa fa-github git"
+											href="https://github.com/dawidgieras98"
+											target="_blank"
+										></i
+										>dawidgieras98</a
+									>
+								</div>
+								<div class="contact_bottom_item">
+									<a href="https://www.linkedin.com/in/dawid-gieras-b0a0621a6/" target="_blank"
+										><i
+											class="fa fa-linkedin linkedin"
+											href="https://www.linkedin.com/in/dawid-gieras-b0a0621a6/"
+											target="_blank"
+										></i
+										>Dawid Gieras</a
+									>
+								</div>
+								<div class="contact_bottom_item">
+									<a
 										href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+										class="mail_anchor"
 										target="_blank"
-									></i
-									>dawid.gieras98@gmail.com</a
-								>
+										><i
+											class="fa fa-at mail"
+											href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+											target="_blank"
+										></i
+										>dawid.gieras98@gmail.com</a
+									>
+								</div>
 							</div>
+
 							<div class="contact_bottom_item phone">
 								<a class="phone_anchor"><i class="fa fa-phone"></i>603-609-265</a>
 							</div>
@@ -331,7 +334,7 @@
 				<p class="display-5 pb-4">Future Frontend Developer</p>
 				<p class="fw-bold pt-5">© Dawid Gieras 2022</p>
 				<a href="https://www.flaticon.com/free-icons/rocket" title="rocket icons"
-					>Icons are created by - Rocket icons Flaticon</a
+					>Rocket icons Flaticon</a
 				>
 			</div>
 		</footer>
